@@ -28,7 +28,7 @@ English. Static site, no build step, no framework, no trackers.
   the repo and point the `<video>` `src` at it.
 - Services: the 11 scopes from the CLEARPATH proposal, grouped in three
   blocks, plus the four weekly report formats and what the client provides.
-- Pricing: $40,000 MXN + IVA / month, flat monthly fee, 6-month minimum.
+- Pricing: $2,500 USD + IVA / month, flat monthly fee, 3-month minimum.
 - Contact: WhatsApp +52 228 133 6525, c.aguirreriano@gmail.com.
 
 ## Note on inlined assets
