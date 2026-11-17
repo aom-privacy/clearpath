@@ -29,7 +29,7 @@ English. Static site, no build step, no framework, no trackers.
 - Services: the 11 scopes from the CLEARPATH proposal, grouped in three
   blocks, plus the four weekly report formats and what the client provides.
 - Pricing: $2,500 USD + IVA / month, flat monthly fee, 3-month minimum.
-- Contact: WhatsApp +52 228 133 6525, c.aguirreriano@gmail.com.
+- Contact: WhatsApp +52 228 133 6525, clearpathloscabos@gmail.com.
 
 ## Note on inlined assets
 
