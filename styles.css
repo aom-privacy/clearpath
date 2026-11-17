@@ -1,13 +1,13 @@
-/* CLEARPATH — single-page site. Palette: midnight jade (from the CLEARPATH brand). */
+/* CLEARPATH — single-page site. Palette: grass green, sampled from the CLEARPATH logo (#55824A). */
 :root {
-  --bg: #002028;
-  --bg-soft: #032e38;
-  --panel: #04313d;
-  --ink: #d6efe6;
-  --muted: #a8c8bd;
-  --primary: #0dac89;
-  --accent: #3fd9c2;
-  --line: rgba(214, 239, 230, 0.14);
+  --bg: #0E2110;
+  --bg-soft: #132A15;
+  --panel: #173A1C;
+  --ink: #DCEFDB;
+  --muted: #A9C6A6;
+  --primary: #55824A;
+  --accent: #90AE89;
+  --line: rgba(220, 239, 219, 0.14);
   --radius: 14px;
 }
 
@@ -70,7 +70,7 @@ p { margin: 0 0 1em; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(0, 32, 40, 0.88);
+  background: rgba(14, 33, 16, 0.88);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -123,13 +123,13 @@ p { margin: 0 0 1em; }
 
 .btn-primary {
   background: var(--accent);
-  color: #002028;
+  color: #0E2110;
 }
 
-.btn-primary:hover { background: #5fe3d1; }
+.btn-primary:hover { background: #A1BA9B; }
 
 .btn-ghost {
-  border: 1px solid rgba(214, 239, 230, 0.45);
+  border: 1px solid rgba(220, 239, 219, 0.45);
   color: var(--ink);
 }
 
@@ -160,7 +160,7 @@ p { margin: 0 0 1em; }
 }
 
 .hero-shade {
-  background: linear-gradient(180deg, rgba(0, 32, 40, 0.55) 0%, rgba(0, 32, 40, 0.45) 45%, rgba(0, 32, 40, 0.92) 100%);
+  background: linear-gradient(180deg, rgba(14, 33, 16, 0.55) 0%, rgba(14, 33, 16, 0.45) 45%, rgba(14, 33, 16, 0.92) 100%);
 }
 
 .hero-content {
@@ -178,7 +178,7 @@ p { margin: 0 0 1em; }
 
 .lede {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
-  color: #e6f5ef;
+  color: #E9F4E6;
   max-width: 34em;
 }
 
@@ -218,7 +218,7 @@ p { margin: 0 0 1em; }
   background: rgba(255, 255, 255, 0.02);
 }
 
-.compare-good { border-color: rgba(63, 217, 194, 0.45); }
+.compare-good { border-color: rgba(144, 174, 137, 0.45); }
 
 .compare-card ul { margin: 0; padding-left: 1.2em; }
 .compare-card li { margin-bottom: 0.6em; }
@@ -318,7 +318,7 @@ p { margin: 0 0 1em; }
   margin-top: 28px;
   padding: 18px 22px;
   border-left: 3px solid var(--accent);
-  background: rgba(63, 217, 194, 0.07);
+  background: rgba(144, 174, 137, 0.07);
   border-radius: 0 10px 10px 0;
 }
 
@@ -347,7 +347,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- pricing ---------- */
 .price-card {
-  border: 1px solid rgba(63, 217, 194, 0.45);
+  border: 1px solid rgba(144, 174, 137, 0.45);
   border-radius: var(--radius);
   padding: 36px 40px;
   background: var(--panel);
@@ -398,7 +398,7 @@ p { margin: 0 0 1em; }
 .closing-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 32, 40, 0.88), rgba(0, 32, 40, 0.72));
+  background: linear-gradient(180deg, rgba(14, 33, 16, 0.88), rgba(14, 33, 16, 0.72));
 }
 
 .closing-content { position: relative; z-index: 2; }
