@@ -82,6 +82,7 @@ p { margin: 0 0 1em; }
   min-height: 68px;
 }
 
+.brand-word em { font-style: normal; color: var(--accent); }
 .brand { text-decoration: none; }
 .brand-word {
   font-size: 1.3rem;
