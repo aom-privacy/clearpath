@@ -25,6 +25,7 @@ def data_uri(path: pathlib.Path, mime: str) -> str:
 def main() -> None:
     subs = {
         "__LOGO_B64__": data_uri(ASSETS / "logo.png", "image/png"),
+        "__FAVICON_B64__": data_uri(ASSETS / "favicon.ico", "image/x-icon"),
         "__VIDEO_B64__": data_uri(ASSETS / "hero-video.mp4", "video/mp4"),
         "__COAST_B64__": data_uri(ASSETS / "photo-coast.jpg", "image/jpeg"),
         "__SITE_B64__": data_uri(ASSETS / "photo-site.jpg", "image/jpeg"),
