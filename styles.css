@@ -435,6 +435,7 @@ p { margin: 0 0 1em; }
   .section { padding: 64px 0; }
   .price-card, .example, .panel, .service-group, .step, .compare-card { padding: 24px 20px; }
   .header-inner { gap: 14px; }
+  .brand-img { height: 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
