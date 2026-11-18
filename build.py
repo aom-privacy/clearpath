@@ -31,6 +31,7 @@ def main() -> None:
         "__SITE_B64__": data_uri(ASSETS / "photo-site.jpg", "image/jpeg"),
         "__HILLS_B64__": data_uri(ASSETS / "photo-hills.jpg", "image/jpeg"),
         "__CHART_B64__": data_uri(ASSETS / "chart.png", "image/png"),
+        "__LOGO_HEADER_B64__": data_uri(ASSETS / "logo-header.png", "image/png"),
     }
     html = (ROOT / "index.template.html").read_text(encoding="utf-8")
     css = (ROOT / "styles.template.css").read_text(encoding="utf-8")
