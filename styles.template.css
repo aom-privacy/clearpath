@@ -113,6 +113,21 @@ p { margin: 0 0 1em; }
 
 .main-nav a:hover { color: var(--accent); }
 
+.lang-switch {
+  font-size: 0.92rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.lang-switch a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lang-switch a:hover { color: var(--accent); }
+
+.lang-switch .lang-current { color: var(--accent); }
+
 /* ---------- buttons ---------- */
 .btn {
   display: inline-block;
