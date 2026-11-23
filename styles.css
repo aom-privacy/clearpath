@@ -108,12 +108,13 @@ p { margin: 0 0 1em; }
   gap: 5px;
   width: 44px;
   height: 44px;
-  margin-left: auto;
   background: transparent;
   border: 1px solid rgba(220, 239, 219, 0.45);
   border-radius: 10px;
   cursor: pointer;
 }
+
+.header-inner > .btn { margin-left: auto; }
 
 .menu-toggle span {
   display: block;
