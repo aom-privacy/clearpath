@@ -518,3 +518,89 @@ p { margin: 0 0 1em; }
 @media (max-width: 640px) {
   .testi-grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- screenshots carousel ---------- */
+.carousel { margin-top: 2em; }
+
+.carousel-viewport {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #0a1a0c;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.carousel-slide { min-width: 100%; margin: 0; }
+
+.carousel-slide img { width: 100%; height: auto; display: block; }
+
+.carousel-slide figcaption {
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.carousel-btn {
+  appearance: none;
+  border: 1px solid rgba(220, 239, 219, 0.45);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 9px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.carousel-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.carousel-dots { display: flex; gap: 8px; margin-left: auto; }
+
+.carousel-dot {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel-dot[aria-current="true"] { background: var(--accent); }
+
+/* ---------- video tutorial ---------- */
+.video-frame {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  margin: 2em auto 0;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

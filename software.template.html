@@ -16,8 +16,8 @@
       <img class="brand-img" src="__LOGO_HEADER_B64__" alt="CLEARPATH">
     </a>
     <nav class="main-nav" aria-label="Main">
-      <a href="../">Home</a>
       <a href="#features">What it does</a>
+      <a href="#screens">Screens</a>
       <a href="#pricing">Pricing</a>
       <a href="#download">Download</a>
     </nav>
@@ -34,6 +34,72 @@
       <p class="eyebrow">CLEARPATH software &mdash; Windows</p>
       <h2>Know what your job really costs, on one screen.</h2>
       <p class="section-intro">CLEARPATH is the cost-control program we use ourselves every day on real jobs. Import or generate your budget, record payments by line item, and see at a glance what you&rsquo;ve paid, what&rsquo;s committed, and what it will cost to finish.</p>
+    </div>
+  </section>
+
+  <!-- SCREENS -->
+  <section class="section section-alt" id="screens">
+    <div class="wrap">
+      <p class="eyebrow">See it in action</p>
+      <h2>The program, screen by screen.</h2>
+      <p class="section-intro">Real screenshots from the sample project: budget, changes, payments, subcontracts, cost centre and reports.</p>
+      <div class="carousel">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <figure class="carousel-slide"><img src="__CAROUSEL_1_B64__" alt="CLEARPATH budget screen in English and Spanish"><figcaption>English and Spanish &mdash; the same program in both languages.</figcaption></figure>
+            <figure class="carousel-slide"><img src="__CAROUSEL_2_B64__" alt="CLEARPATH budget with the sample project"><figcaption>Your budget, line by line &mdash; imported from Excel, OPUS or Neodata.</figcaption></figure>
+            <figure class="carousel-slide"><img src="__CAROUSEL_3_B64__" alt="CLEARPATH modifications screen"><figcaption>Only approved changes move the budget.</figcaption></figure>
+            <figure class="carousel-slide"><img src="__CAROUSEL_4_B64__" alt="CLEARPATH payments screen"><figcaption>Payments by line item, with supplier, type and date.</figcaption></figure>
+            <figure class="carousel-slide"><img src="__CAROUSEL_5_B64__" alt="CLEARPATH subcontracts screen"><figcaption>Subcontracts with paid, balance and overpayment flags.</figcaption></figure>
+            <figure class="carousel-slide"><img src="__CAROUSEL_6_B64__" alt="CLEARPATH cost centre screen"><figcaption>Cost centre: base budget, paid, committed and forecast, on one screen.</figcaption></figure>
+            <figure class="carousel-slide"><img src="__CAROUSEL_7_B64__" alt="CLEARPATH KPI dashboard"><figcaption>KPI dashboard: traffic-light status per line item, CPI and forecast.</figcaption></figure>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">&larr; Previous</button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">Next &rarr;</button>
+          <div class="carousel-dots" aria-label="Screenshots">
+            <button type="button" class="carousel-dot" aria-label="Screenshot 1" aria-current="true"></button>
+            <button type="button" class="carousel-dot" aria-label="Screenshot 2" aria-current="false"></button>
+            <button type="button" class="carousel-dot" aria-label="Screenshot 3" aria-current="false"></button>
+            <button type="button" class="carousel-dot" aria-label="Screenshot 4" aria-current="false"></button>
+            <button type="button" class="carousel-dot" aria-label="Screenshot 5" aria-current="false"></button>
+            <button type="button" class="carousel-dot" aria-label="Screenshot 6" aria-current="false"></button>
+            <button type="button" class="carousel-dot" aria-label="Screenshot 7" aria-current="false"></button>
+          </div>
+        </div>
+      </div>
+      <script>
+      (function () {
+        var track = document.querySelector('.carousel-track');
+        if (!track) return;
+        var slides = track.children.length;
+        var dots = document.querySelectorAll('.carousel-dot');
+        var index = 0, timer = null;
+        function go(i) {
+          index = (i + slides) % slides;
+          track.style.transform = 'translateX(-' + index * 100 + '%)';
+          dots.forEach(function (d, j) { d.setAttribute('aria-current', j === index ? 'true' : 'false'); });
+        }
+        function stop() { if (timer) { clearInterval(timer); timer = null; } }
+        document.querySelector('.carousel-prev').addEventListener('click', function () { stop(); go(index - 1); });
+        document.querySelector('.carousel-next').addEventListener('click', function () { stop(); go(index + 1); });
+        dots.forEach(function (d, j) { d.addEventListener('click', function () { stop(); go(j); }); });
+        timer = setInterval(function () { go(index + 1); }, 6000);
+      })();
+      </script>
+    </div>
+  </section>
+
+  <!-- VIDEO TUTORIAL -->
+  <section class="section" id="tutorial">
+    <div class="wrap">
+      <p class="eyebrow">Video tutorial</p>
+      <h2>Watch the full tutorial.</h2>
+      <p class="section-intro">Four minutes, start to finish: the sample project, a new project, importing a budget, payments, cost centre and reports. <span class="fine">(In Spanish.)</span></p>
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/q7-YFulVAGw" title="Tutorial CLEARPATH" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
