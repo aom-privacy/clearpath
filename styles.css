@@ -674,3 +674,8 @@ p { margin: 0 0 1em; }
   height: 100%;
   border: 0;
 }
+
+.video-frame-vertical {
+  max-width: 400px;
+  aspect-ratio: 9 / 16;
+}
