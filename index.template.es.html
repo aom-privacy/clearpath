@@ -5,27 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CLEARPATH — Control de costos de construcción en Los Cabos</title>
 <meta name="description" content="CLEARPATH es control de costos semanal para la construcción de casas de lujo en Los Cabos: pagado, comprometido y pronóstico a término, partida por partida. Tarifa mensual fija, visita semanal a obra, reporte ejecutivo semanal.">
-<link rel="stylesheet" href="../styles.css?v=7">
+<link rel="stylesheet" href="../styles.css?v=13">
 <link rel="icon" type="image/x-icon" href="__FAVICON_B64__">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap header-inner">
+    <button class="menu-toggle" type="button" aria-label="Menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
     <a class="brand" href="#top" aria-label="CLEARPATH — inicio">
       <img class="brand-img" src="__LOGO_HEADER_B64__" alt="CLEARPATH">
     </a>
-    <nav class="main-nav" aria-label="Principal">
+    <nav class="main-nav" id="main-nav" aria-label="Principal">
       <a href="#problem">El problema</a>
       <a href="#services">Servicios</a>
       <a href="#how">Cómo funciona</a>
       <a href="#pricing">Precios</a>
-      <a href="#testimonials">Testimonios</a>
       <a href="#about">Acerca de</a>
+      <a href="#testimonials">Testimonios</a>
       <a href="software/">Software</a>
     </nav>
-    <span class="lang-switch" aria-label="Idioma"><a href="../" lang="en">EN</a> | <span class="lang-current">ES</span></span>
     <a class="btn btn-small" href="https://wa.me/522281336525" target="_blank" rel="noopener">WhatsApp</a>
+    <span class="lang-switch" aria-label="Idioma"><a href="../" lang="en">EN</a> | <span class="lang-current">ES</span></span>
   </div>
 </header>
 
@@ -240,10 +241,6 @@
     <div class="wrap closing-content">
       <h2>Construya tranquilo: sepa a dónde va su dinero, cada semana.</h2>
       <p>Cuéntenos de su proyecto y le mostraremos cómo se vería su primer reporte semanal.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/522281336525" target="_blank" rel="noopener">Chatear por WhatsApp</a>
-        <a class="btn btn-ghost" href="mailto:clearpathloscabos@gmail.com">clearpathloscabos@gmail.com</a>
-      </div>
     </div>
   </section>
 
@@ -263,6 +260,23 @@
     </p>
   </div>
 </footer>
+
+<script>
+(function () {
+  var btn = document.querySelector('.menu-toggle');
+  var nav = document.getElementById('main-nav');
+  if (!btn || !nav) return;
+  function close() { nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) close(); });
+  document.addEventListener('click', function (e) { if (!nav.contains(e.target)) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
 
 </body>
 </html>
