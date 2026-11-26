@@ -34,6 +34,14 @@ def build_page(template: pathlib.Path, output: pathlib.Path, chart: pathlib.Path
         "__HILLS_B64__": data_uri(ASSETS / "photo-hills.jpg", "image/jpeg"),
         "__CHART_B64__": data_uri(chart, "image/png"),
         "__LOGO_HEADER_B64__": data_uri(ASSETS / "logo-header.png", "image/png"),
+        "__CAROUSEL_1_B64__": data_uri(ASSETS / "carousel-1.png", "image/png"),
+        "__CAROUSEL_2_B64__": data_uri(ASSETS / "carousel-2.png", "image/png"),
+        "__CAROUSEL_3_B64__": data_uri(ASSETS / "carousel-3.png", "image/png"),
+        "__CAROUSEL_4_B64__": data_uri(ASSETS / "carousel-4.png", "image/png"),
+        "__CAROUSEL_5_B64__": data_uri(ASSETS / "carousel-5.png", "image/png"),
+        "__CAROUSEL_6_B64__": data_uri(ASSETS / "carousel-6.png", "image/png"),
+        "__CAROUSEL_7_B64__": data_uri(ASSETS / "carousel-7.png", "image/png"),
+        "__ABOUT_CARLOS_B64__": data_uri(ASSETS / "about-carlos.jpg", "image/jpeg"),
     }
     html = template.read_text(encoding="utf-8")
     for key, val in subs.items():
@@ -66,6 +74,8 @@ def main() -> None:
     print(f"styles.css: {(ROOT / 'styles.css').stat().st_size / 1e3:.1f} KB")
     build_page(ROOT / "index.template.html", ROOT / "index.html", ASSETS / "chart.png")
     build_page(ROOT / "index.template.es.html", ROOT / "es" / "index.html", ASSETS / "chart-es.png")
+    build_page(ROOT / "software.template.html", ROOT / "software" / "index.html", ASSETS / "chart.png")
+    build_page(ROOT / "software.template.es.html", ROOT / "es" / "software" / "index.html", ASSETS / "chart-es.png")
 
 
 if __name__ == "__main__":
